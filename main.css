@@ -1,0 +1,90 @@
+header{
+  display: block;
+  background-color: #427696;
+}
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #5ec8db;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+  width: 3.5em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0.5em;
+  font-family: sans-serif;
+}
+
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span::after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span{
+  padding-right: 1em
+}
+
+.button:hover span::after{
+  opacity: 1;
+  right: 0;
+}
+/*______________________________*/
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 1em;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catfactBox{
+  width:60%;
+  height: 20%;
+  padding: 5em;
+  margin: 2em;
+  border-style: solid;
+  border-width: medium;
+  border-color: #9e862f;
+  margin: .5em;
+  flex-grow: 5;
+  text-align: center;
+}
+
+.tallyButton{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+#good{
+  position: relative;
+  padding: 5em;
+}
+
+#bad{
+  position: relative;
+  padding: 5em;
+}
