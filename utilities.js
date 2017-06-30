@@ -2,21 +2,13 @@
 // const catfact =
 // const url =
 
-var catFact = document.getElementById('catfact');
-var randomfact = getRandomInt(1, 622);
-var url = 'http://www.catfact.info/api/v1/facts.json?page=' + randomfact + '&per_page=1';
-
-
-
-function getAnother(){
-  console.log("food")
-  catFact.addEventListener('click', getRandomInt)
-  catFact.addEventListener('click', newCatFact)
+document.addEventListener('DOMContentLoaded', start)
+//add eventlisteners after content in loaded
+function start () {
+  document.getElementById("goodbutton").addEventListener("click", tallyCountGood)
+  document.getElementById("badbutton").addEventListener("click", tallyCountBad)
+  newCatFact()
 }
-
-
-
-
 
     function getRandomInt(min, max) {
         min = Math.ceil(min);
@@ -25,11 +17,15 @@ function getAnother(){
     }
   // on click
     function newCatFact(){
+
+      var randomfact = getRandomInt(1, 622);
+      var url = 'http://www.catfact.info/api/v1/facts.json?page=' + randomfact + '&per_page=1';//randomfact is a random page number
+console.log(url)
       // API fetch function to retreve info from outside source
       fetch(url).then(function(response) {
           return response.json(); // transforms the data into json
       }).then(function(data) { //can ulter the data how you want it to look
-          catFact.innerText = data.facts[0].details;
+          document.getElementById("catfact").innerText = data.facts[0].details;
           console.log(data);
       }).catch(function() {
           console.log("booo");

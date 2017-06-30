@@ -59,7 +59,6 @@ header{
 }
 
 .catfactBox{
-  width:60%;
   height: 20%;
   padding: 5em;
   margin: 2em;
@@ -71,12 +70,14 @@ header{
   text-align: center;
 }
 
-.tallyButton{
+.tallyButtonContainer{
+  margin: auto;
+}
+
+.tallyButtonBox{
   display: flex;
   flex-direction: row;
   align-content: center;
-  margin-left: 10em;
-  margin-right: 10em;
 }
 
 #good{

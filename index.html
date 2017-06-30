@@ -5,8 +5,8 @@
     <title>Cat Facts</title>
     <meta charset="UTF-8">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script scr="utilities.js"></script>
-    <script type="tallyCount.js"></script>
+    <script src="utilities.js"></script>
+    <script src="tallyCount.js"></script>
     <link rel="stylesheet" href="main.css">
 
 
@@ -20,19 +20,20 @@
         <div class="quoteBox center">
             <div class="catfactBox">
                 <h1 id="catfact">The story gose</h1>
-
-                <button class="newFactButton" type="button" value="button" onclick="getAnother()"><h4>click for another</h4></button>
             </div>
         </div>
-        <div class="tallyButton">
+        <div class="tallyButtonContainer">
+          <div class="tallyButtonBox">
             <div id="good">
-                <button type="button"  onclick="tallyCount()">good</button>
-                <p>Total: <a class="votes">0</a></p>
+                <button type="button"  id="goodbutton">good</button>
+                <p>Total: <a id="goodtotal">0</a></p>
             </div>
             <div id="bad">
-              <button type="button" onclick="tallyCount()">bad</button>
-              <p>Total: <a class="votes">0</a></p>
+              <button type="button" id="badbutton">bad</button>
+              <p>Total: <a id="badtotal">0</a></p>
             </div>
+          </div>
+
         </div>
       </div>
 
