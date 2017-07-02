@@ -13,4 +13,5 @@ function tallyCountBad(){
   badclick +=1;
   document.getElementById("badtotal").innerText=badclick;
   newCatFact();
+  photocycle();
 }

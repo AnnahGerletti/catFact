@@ -8,6 +8,9 @@ function start () {
   document.getElementById("goodbutton").addEventListener("click", tallyCountGood)
   document.getElementById("badbutton").addEventListener("click", tallyCountBad)
   newCatFact()
+
+photocycle()
+
 }
 
     function getRandomInt(min, max) {
