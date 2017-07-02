@@ -21,14 +21,16 @@ function start () {
   // on click
     function newCatFact(){
 
-      var randomfact = getRandomInt(1, 622);
-      var url = 'http://www.catfact.info/api/v1/facts.json?page=' + randomfact + '&per_page=1';//randomfact is a random page number
+      // var randomfact = getRandomInt(1, 622); old catfact
+      // var url = 'http://www.catfact.info/api/v1/facts.json?page=' + randomfact + '&per_page=1';//randomfact is a random page number
+      var url="https://crossorigin.me/https://catfact.ninja/fact"
+
 console.log(url)
       // API fetch function to retreve info from outside source
       fetch(url).then(function(response) {
           return response.json(); // transforms the data into json
       }).then(function(data) { //can ulter the data how you want it to look
-          document.getElementById("catfact").innerText = data.facts[0].details;
+          document.getElementById("catfact").innerText = data.fact;
           console.log(data);
       }).catch(function() {
           console.log("booo");

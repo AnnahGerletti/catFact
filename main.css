@@ -103,7 +103,7 @@ body{
   margin: 1em;
   margin: .5em;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   font-family: 'Bree Serif', serif;
 }
@@ -141,8 +141,7 @@ body{
 
 #good{
   position: relative;
-  padding: 5em;
-  color: white;
+  color: green;
 }
 
 #good p{
@@ -153,8 +152,7 @@ body{
 
 #bad{
   position: relative;
-  padding: 5em;
-  color: white;
+  color: red;
 }
 
 #bad p{
