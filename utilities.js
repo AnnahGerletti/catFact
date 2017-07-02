@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', start)
 function start () {
   document.getElementById("goodbutton").addEventListener("click", tallyCountGood)
   document.getElementById("badbutton").addEventListener("click", tallyCountBad)
-  newCatFact()
+  document.getElementById("firstbutton").addEventListener("click", voteCatFact)
 
-photocycle()
+  photocycle()
 
 }
 
@@ -35,6 +35,12 @@ console.log(url)
       });
     }
 
+function voteCatFact(){
+  document.getElementById("firstbutton").style.display="none";
+  document.getElementById("tallyButtonContainer").style.display="block";
+
+  newCatFact()
+}
 // set url to a var then used .slice to select specific objects from the api array
 //
   // h4.addEventListener("click",newFact);

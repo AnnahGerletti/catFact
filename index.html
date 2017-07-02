@@ -3,6 +3,7 @@
 
 <head>
     <title>Cat Facts</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <meta charset="UTF-8">
     <script src="utilities.js"></script>
     <script src="tallyCount.js"></script>
@@ -20,18 +21,19 @@
       </header>
         <div class="quoteBox center">
             <div class="catfactBox">
-                <h1 id="catfact">The story gose</h1>
+                <h1 id="catfact">Welcome To Cat Fact</h1>
+                <button class="firstButton" type="button"  id="firstbutton">Press for first fact</button>
             </div>
         </div>
-        <div class="tallyButtonContainer">
+        <div id="tallyButtonContainer">
           <div class="tallyButtonBox">
             <div id="good">
-                <button type="button"  id="goodbutton">good</button>
-                <p>Total: <a id="goodtotal">0</a></p>
+                <button class="tallyButton" type="button"  id="goodbutton">good</button>
+                <p> <a id="goodtotal">0</a></p>
             </div>
             <div id="bad">
-              <button type="button" id="badbutton">bad</button>
-              <p>Total: <a id="badtotal">0</a></p>
+                <button class="tallyButton" type="button" id="badbutton">bad</button>
+                <p> <a id="badtotal">0</a></p>
             </div>
           </div>
 

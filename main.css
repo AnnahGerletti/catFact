@@ -14,7 +14,7 @@ body{
 .button{
   display: inline-block;
   border-radius: 4px;
-  background-color: #5ec8db;
+  background-color: gray;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -25,6 +25,11 @@ body{
   cursor: pointer;
   margin: 0.5em;
   font-family: sans-serif;
+  opacity: 0.6;
+}
+
+.button:hover{
+  opacity: 1.0;
 }
 
 .button span{
@@ -44,12 +49,34 @@ body{
 }
 
 .button:hover span{
-  padding-right: 1em
+  padding-right: 1em;
 }
 
 .button:hover span::after{
-  opacity: 1;
+  opacity: 1.0;
   right: 0;
+}
+
+.firstButton{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: gray;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: .7em;
+  padding: 1em;
+  width: 15em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0.5em;
+  font-family: sans-serif;
+  opacity: 0.7;
+}
+
+.firstButton:hover{
+  opacity: 1.0;
+}
 }
 /*______________________________*/
 
@@ -78,16 +105,38 @@ body{
   text-align: center;
   font-size: 2em;
   color: white;
+  font-family: 'Bree Serif', serif;
 }
 
-.tallyButtonContainer{
+#tallyButtonContainer{
   margin: auto;
+  display: none;
 }
 
 .tallyButtonBox{
   display: flex;
   flex-direction: row;
   align-content: center;
+}
+.tallyButton{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: gray;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+  width: 4em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0.5em;
+  font-family: sans-serif;
+  opacity: 0.7;
+}
+
+.tallyButton:hover{
+  opacity: 1.0;
 }
 
 #good{
@@ -96,10 +145,22 @@ body{
   color: white;
 }
 
+#good p{
+  margin: 0 0 0 1em;
+  font-family: 'Bree Serif', serif;
+  font-size: 2em;
+}
+
 #bad{
   position: relative;
   padding: 5em;
   color: white;
+}
+
+#bad p{
+  margin: 0 0 0 1em;
+  font-family: 'Bree Serif', serif;
+  font-size: 2em;
 }
 
 .image1{
